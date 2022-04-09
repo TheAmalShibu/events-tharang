@@ -112,7 +112,7 @@ p {
 Common
 -------------------------------*/
 .section {
-  padding: 90px 0px;
+  padding: 125px 0px;
 }
 
 .section-sm {
@@ -256,6 +256,16 @@ a {
 /*-------------------------------
 header
 -------------------------------*/
+.navfixer {
+  background-color:white; 
+  position: fixed; 
+  width: 100%; 
+  z-index: 9999;
+  -moz-box-shadow: 0 0 30px 5px rgb(255, 255, 255);
+  -webkit-box-shadow: 0 0 30px 5px rgb(195, 196, 245);
+  
+}
+
 .navbar-brand {
   font-size: 28px;
   font-weight: 700;
@@ -1362,7 +1372,6 @@ footer
     border-radius: 5px;
   }
 }
-
 /*-------------------------------
 Responsive
 -------------------------------*/
