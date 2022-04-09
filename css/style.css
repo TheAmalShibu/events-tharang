@@ -3,6 +3,12 @@
 
 
 
+ /* Hide Scroll Bar */
+::-webkit-scrollbar { 
+  display: none; /* Chrome Safari */
+}
+
+
 
 /*-------------------------------
 typography
