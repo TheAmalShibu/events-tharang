@@ -1,4 +1,4 @@
-# events-tharang
+# Events-tharang
 
 Events page of tharang available at : events.tharang.jecc.ac.in
 
