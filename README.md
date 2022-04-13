@@ -1,6 +1,7 @@
 # events-tharang
 
 Events page of tharang available at : events.tharang.jecc.ac.in
+
 Main page : tharang.jecc.ac.in
 
 
@@ -8,5 +9,6 @@ Main page : tharang.jecc.ac.in
 
 Push to test branch first
 
-```git push origin test
+```
+git push origin test
 ```
