@@ -7,7 +7,6 @@ Main page : tharang.jecc.ac.in
 # Developer Notes (those with collabrator access)
 
 Push to test branch first
-```
-git push origin test
 
+```git push origin test
 ```
