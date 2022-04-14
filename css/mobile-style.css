@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .main-nav {
     position: relative;
     background-color: #fc466b;
@@ -207,12 +207,12 @@
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 50px;
   }
 
   .theme-card {
     width: 30%;
-    height: 200px;
+    height: 160px;
     margin: 8px;
     display: flex;
     flex-direction: column;
@@ -221,7 +221,9 @@
     text-align: center;
     background-color: #eeeeee;
   }
-
+  .theme-card h3{
+    font-size: 20px;
+  }
   .event-schedule {
     margin-top: 20px;
   }
