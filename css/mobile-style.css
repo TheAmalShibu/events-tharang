@@ -1,4 +1,12 @@
-@media screen and (max-width: 700px) {
+@media screen and(max-width: 700px){
+  .hero-img {
+    width: 50%;
+    margin-top: -50px;
+    margin-left:200px;
+
+  }
+}
+  @media screen and (max-width: 1200px) {
   .main-nav {
     position: relative;
     background-color: #fc466b;
@@ -9,7 +17,7 @@
   }
 
   .hero-section {
-    height: 90vh;
+    height: 50vh;
     position: relative;
   }
 
@@ -45,8 +53,9 @@
 
   .hero-img {
     width: 50%;
-    margin-top: 200px;
-    margin-left:-100px;
+    margin-top: 50px;
+    margin-right:-50px;
+
   }
 
   
