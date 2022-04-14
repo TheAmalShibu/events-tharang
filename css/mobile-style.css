@@ -222,7 +222,7 @@
     background-color: #eeeeee;
   }
   .theme-card h3{
-    font-size: 20px;
+    font-size: 18px;
   }
   .event-schedule {
     margin-top: 20px;
@@ -358,6 +358,7 @@
     height: 50vh;
     width: 95%;
     font-size: 1rem;
+    margin-top: -100px;
   }
 
   .sponsors h1 {
@@ -373,7 +374,7 @@
     padding: 0;
     height: 30vh;
     width: 200%;
-    margin-left: -70px;
+    margin-left: -75px;
   }
 
   .sponsors-list-list {
