@@ -1,436 +1,566 @@
 <!DOCTYPE html>
-<html lang="en">
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<html>
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AREA' 51</title>
-    <meta
-      name="keywords"
-      content="Hackathon, AREA' 51, Hacakthon Kerala, UnicornDev Community, JECC"
-    />
+	<title> Hack On Hills - 2019</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content ="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="description" content="Hack on Hills 4.0 - Fourth edition of annual hackathon organized by App Team NITH">
+	<meta name="keywords" content="Hackathon,NITH,NIT,Hamirpur,Hack,On,Hills,App,Team,2018,Nimbus,Hillffair">
+	<meta name="author" content="Saurabh Kumar <saurabh.k0402@gmail.com>">
+	<meta name="author" content="Atul Kumar <atul.kumar.prajapati02@gmail.com>">
+	<link rel="shortcut icon" href="./images/Events_Area51/new_logo.png" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="./css/area51.css">
+	<link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			let devfolioOptions = {
+					buttonSelector: '#devfolio-apply-now',
+					key: 'hackonhills',
+			}
 
-    <meta name="title" content="AREA'51 " />
-    <meta
-      name="description"
-      content="Hackathon Landing Page of JECC,Thrissur"
-    />
-    <meta name="author" href="#" content="" />
+			let script = document.createElement('script');
+			script.src = "https://apply.devfolio.co";
+			document.head.append(script);
 
-      <meta
-      property="og:description"
-      content="Hackathon Landing Page  of JECC, Thrissur"
-    />
+			script.onload = function () {
+					new Devfolio(devfolioOptions);
+					let e1 = document.createElement('div');
+					e1.className = "button-back";
+					document.getElementById("devfolio-apply-now").appendChild(e1);
+			}
 
-    <title>AREA' 51</title>
+			script.onerror = function () {
+					document.querySelector(devfolioOptions.buttonSelector).addEventListener('click', function () {
+						window.location.href = 'https://devfolio.co/external-apply/' + devfolioOptions.key;
+					});
+			}
+		});
+	</script>
+</head>
+<body>
+	<div class="header">
+		<div class="blurred"></div>
+		<ul class="nav">
+			<li class="head">
+				<span class="closeHeader">
+					<img src="./images/Events_Area51/cross.svg">
+				</span>
+			</li>
+			<li class="navItem active"> Home </li>
+			<li class="navItem"> Diversity </li>
+			<!-- <li class="navItem"> Gallery </li> -->
+			<li class="navItem"> Tracks </li>
+			<li class="navItem"> Schedule </li>
+			<li class="navItem"> Sponsors </li>
+			<li class="navItem"> Prizes </li>
+			<li class="navItem"> FAQs </li>
+		</ul>
+	</div>
+	<div class="fullOverlay"></div>
+	<div class="content">
+		<div class="hamburger">
+			<img src="./images/Events_Area51/menu.svg">
+		</div>
+		<div class="appteam-logo">
+			<!--<img src="./images/Events_Area51/logo.svg" title="App Team NITH">-->
+		</div>
+		<div class="frame frame1">
+			<img src="./images/Events_Area51/back-1.svg" class="img-back">
+			<div class="frame1-right">
+				<img src="./images/Events_Area51/frame1-icon.svg">
+			</div>
+			<div class="frame1-left">
+				<div class="content">
+					<div class="sponsor-name"> <img src="./images/Events_Area51/GitHub_Logo_White.png" class="github-home-icon"> Presents </div>
+					<div class="name"> Hack on Hills</div><br>
+					<div class="date"> 8 - 10 March 2019 </div><br>
+					<div class="date"> NIT Hamirpur </div>
+					<div class="devfolio">
+						<button id="devfolio-apply-now"> Apply With Devfolio </button>
+					</div>
+				</div>
+			</div>
+			<div class="app-team-icon">
+				<img src="./images/Events_Area51/appteam.png">
+			</div>
+		</div>
+		<div class="frame frame2">
+			<img class="img-back-left" src="./images/Events_Area51/back-2.svg">
+			<img class="img-back" src="./images/Events_Area51/back-3.svg">
+			<div class="frame2-left">
+				<img src="./images/Events_Area51/frame1-right.svg">
+			</div>
+			<div class="frame2-right">
+				<div class="name"> Diversity </div>
+				<div class="content">
+					<p>
+						Hack On Hills aims to build an environment of collaborative growth amongst all the participants regardless of their gender, caste, creed, sexual preference, socioeconomic background or cultural belief. Hack On Hills is open to everyone with a crazy idea and a will to implement it into a working prototype. 
+					</p>
+					<p>
+						Hack On Hills has always been supportive for women participation in the event, we have tried our level best to make sure that female candidates get a fair chance to put-forth their ideas and showcase their experience and talent.
+					</p>
+					<p>
+						For this, we have introduced separate prizes for best all women team and reserving some portions of seats for womens during hackathon.
+					</p>
+					<p>
+						See our Code of Conduct <a href="https://hackcodeofconduct.org/847-hack_on_hills" target="__blank">Here</a>.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="frame frame3">
+			<img src="./images/Events_Area51/back-4.svg" class="img-back">
+			<img src="./images/Events_Area51/back-5.svg" class="img-back-bottom">
+			<div class="frame5-content">
+				<div class="name"> Tracks </div>
+				<div class="track-icons">
+					<div class="a-track">
+						<div class="colorless">
+							<img src="./images/Events_Area51/Tracks/blockchain.svg">
+						</div>
+						<div class="colorful">
+							<img src="./images/Events_Area51/Tracks/blockchain-color.svg">
+						</div>
+						<div class="track-name">
+							Blockchain
+						</div>
+					</div>
+					<div class="a-track">
+						<div class="colorless">
+							<img src="./images/Events_Area51/Tracks/iot.svg">
+						</div>
+						<div class="colorful">
+							<img src="./images/Events_Area51/Tracks/iot-color.svg">
+						</div>
+						<div class="track-name">
+							IoT
+						</div>
+					</div>
+					<div class="a-track">
+						<div class="colorless">
+							<img src="./images/Events_Area51/Tracks/ai.svg">
+						</div>
+						<div class="colorful">
+							<img src="./images/Events_Area51/Tracks/ai-color.svg">
+						</div>
+						
+						<div class="track-name">
+							AI
+						</div>
+					</div>
+					<div class="a-track">
+						<div class="colorless">
+							<img src="./images/Events_Area51/Tracks/webapp.svg">
+						</div>
+						<div class="colorful">
+							<img src="./images/Events_Area51/Tracks/webapp-color.svg">
+						</div>
+						<div class="track-name">
+							Web&nbsp;/&nbsp;App
+						</div>
+					</div>
+					<div class="a-track">
+						<div class="colorless">
+							<img src="./images/Events_Area51/Tracks/vr.svg">
+						</div>
+						<div class="colorful">
+							<img src="./images/Events_Area51/Tracks/vr-color.svg">
+						</div>
+						<div class="track-name">
+							AR&nbsp;/&nbsp;VR
+						</div>
+					</div>
+					<div class="a-track">
+						<div class="colorless">
+							<img src="./images/Events_Area51/Tracks/general.svg">
+						</div>
+						<div class="colorful">
+							<img src="./images/Events_Area51/Tracks/general-color.svg">
+						</div>
+						<div class="track-name">
+							General
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="frame frame4">
+			<img class="img-back-left" src="./images/Events_Area51/back-3.svg">
+			<img class="img-back" src="./images/Events_Area51/back-2.svg">
+			<div class="frame4-left">
+				<img src="./images/Events_Area51/frame2-right.svg">
+			</div>
+			<div class="frame4-right">
+				<div class="name"> Timeline </div>
+				<div class="timeline">
+					<div class="schedule schedule-1">
+						<div class="dot"></div>
+						<div class="schedule-content">
+							<div class="schedule-date"> 8th March 2019 </div>
+							<div class="schedule-title"> Opening Ceremony and Pre Hackathon meet </div>
+							<div class="schedule-text"> <span class="schedule-time"> 4:00 PM - </span> Inauguration </div>
+							<div class="schedule-text"> <span class="schedule-time"> 4:25 PM - 4:30 PM - </span> Schedule + Rules of Events </div>
+							<div class="schedule-text"> <span class="schedule-time"> 4:30 PM - 5:00 PM - </span> Github Keynote </div>
+							<div class="schedule-text"> <span class="schedule-time"> 5:00 PM - 5:30 PM - </span> Mozilla AR/VA Talk </div>
+							<div class="schedule-text"> <span class="schedule-time"> 5:30 PM - 6:00 PM - </span> Coding Blocks ML Talk </div>
+							<div class="schedule-text"> <span class="schedule-time"> 6:00 PM - 7:00 PM - </span> Doubts and Team formation discussions </div>
+						</div>
+					</div>
+					<div class="schedule schedule-2">
+						<div class="dot"></div>
+						<div class="schedule-content">
+							<div class="schedule-date"> 9th March 2019 </div>
+							<div class="schedule-title"> Hacking begins </div>
+							<div class="schedule-text"> <span class="schedule-time"> 8:00 AM - </span> Commencement of Hackathon Day-1 </div>
+							<div class="schedule-text"> <span class="schedule-time"> 11:00 AM - 12:00 PM - </span> Coding Blocks ML Workshop </div>
+							<div class="schedule-text"> <span class="schedule-time"> 2:00 PM - 8:00 PM - </span> Evaluation Day-1 </div>
+							<div class="schedule-text"> <span class="schedule-time"> 2:00 PM - 3:00 PM - </span> Github Workshop </div>
+							<div class="schedule-text"> <span class="schedule-time"> 3:00 PM - 3:30 PM - </span> Quicknode Workshop </div>
+						</div>
+					</div>
+					<div class="schedule schedule-3">
+						<div class="dot"></div>
+						<div class="schedule-content">
+							<div class="schedule-date"> 10th March 2019 </div>
+							<div class="schedule-title"> Presentation and Judgement </div>
+							<div class="schedule-text"> <span class="schedule-time"> 1:30 PM - 4:00 PM - </span> Evaluation Day-2 </div>
+							<div class="schedule-text"> <span class="schedule-time"> 4:00 PM - </span> Code Submission Deadline on Devfolio </div>
+							<div class="schedule-text"> <span class="schedule-time"> 4:00 PM - 5:00 PM - </span> Photoshoot </div>
+							<div class="schedule-text"> <span class="schedule-time"> 5:00 PM - 5:30 PM - </span> Announcement of Teams for Presentation </div>
+							<div class="schedule-text"> <span class="schedule-time"> 5:30 PM - 7:30 PM - </span> Presentations of Selected Teams </div>
+							<div class="schedule-text"> <span class="schedule-time"> 7:30 PM - 7:45 PM - </span> Felicitation </div>
+							<div class="schedule-text"> <span class="schedule-time"> 7:45 PM - 8:00 PM - </span> Prize Distribution </div>
+							<div class="schedule-text"> <span class="schedule-time"> 8:00 PM - 8:15 PM - </span> Vote of Thanks </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="frame frame5">
+			<img src="./images/Events_Area51/back-4.svg" class="img-back">
+			<img src="./images/Events_Area51/back-5.svg" class="img-back-bottom">
+			<div class="frame5-content">
+				<div class="name"> Sponsors </div>
+				<div class="sponsor-icons">
+					<div class="sponsor-icon main-sponsor">
+						<a href="http://github.com/" target="__blank"><img src="./images/Events_Area51/Sponsors/GitHub_Logo.png"></a>
+					</div>
+					<div class="sponsor-icon">
+						<a href="https://ebizontek.com/" target="__blank"><img src="./images/Events_Area51/Sponsors/EbizON-LOGO.png"></a>
+					</div>
+					<div class="sponsor-icon dev-icon">
+						<a href="https://devfolio.co/" target="__blank"><img src="./images/Events_Area51/Sponsors/devfolio.png"></a>
+					</div>
+					<div class="sponsor-icon">
+						<a href="https://simbachain.com/" target="__blank"><img src="./images/Events_Area51/Sponsors/SIMBA_logo-h.png"></a>
+					</div>
+					<div class="sponsor-icon square-icon">
+						<a href="https://quiknode.io/" target="__blank"><img src="./images/Events_Area51/Sponsors/QuikNode.png"></a>
+					</div>
+					<div class="sponsor-icon">
+						<a href="https://matic.network/" target="__blank"><img src="./images/Events_Area51/Sponsors/Matic_Logo.png"></a>
+					</div>
+					<div class="sponsor-icon dev-icon">
+						<a href="https://metabrainz.org/" target="__blank"><img src="./images/Events_Area51/Sponsors/meta.png"></a>
+					</div>
+					<div class="sponsor-icon">
+						<a href="https://about.gitlab.com/" target="__blank"><img src="./images/Events_Area51/Sponsors/gitlab.png"></a>
+					</div>
+					<div class="sponsor-icon square-icon">
+						<a href="https://himachal.nic.in/en-IN/" target="__blank"><img src="./images/Events_Area51/Sponsors/himachal govt logo.png"></a>
+					</div>
+					<div class="sponsor-icon dev-icon">
+						<a href="https://codingblocks.com/" target="__blank"><img src="./images/Events_Area51/Sponsors/Logo_DarkGrey_ NoShadow.png"></a>
+					</div>
+					<div class="sponsor-icon square-icon">
+						<a href="https://zulipchat.com/" target="__blank"><img src="./images/Events_Area51/Sponsors/zulip-logo.png"></a>
+					</div>
+					<div class="sponsor-icon">
+						<a href="https://hasura.io/" target="__blank"><img src="./images/Events_Area51/Sponsors/hasura_logo_horizontal_black.png"></a>
+					</div>
+					<div class="sponsor-icon">
+						<a href="https://www.roposo.com/" target="__blank"><img src="./images/Events_Area51/Sponsors/roposo.png"></a>
+					</div>
+					
+					<div class="sponsor-icon">
+						<a href="https://socialcops.com/" target="__blank"><img src="./images/Events_Area51/Sponsors/socialcops.png"></a>
+					</div>
+					<div class="sponsor-icon dev-icon">
+						<a href="https://www.stickermule.com/" target="__blank"><img src="./images/Events_Area51/Sponsors/sticker-mule-logo-dark.png"></a>
+					</div>
+					<div class="sponsor-icon dev-icon">
+						<a href="https://www.stickwidit.com/" target="__blank"><img src="./images/Events_Area51/Sponsors/stickwidit.png"></a>
+					</div>
+					<div class="sponsor-icon square-icon">
+						<a href="https://duassassins.in/" target="__blank"><img src="./images/Events_Area51/Sponsors/Team Du Assassins!  20180619_140523.jpg"></a>
+					</div>
+					<div class="sponsor-icon dev-icon">
+						<a href="https://www.hellointern.com/" target="__blank"><img src="./images/Events_Area51/Sponsors/HI-Logo-PNG.png"></a>
+					</div>
+					<div class="sponsor-icon dev-icon">
+						<a href="http://ohcampus.com/v2/" target="__blank"><img src="./images/Events_Area51/Sponsors/OhCampus New Logo.png"></a>
+					</div>
+					<div class="sponsor-icon middle-icon">
+						<a href="https://www.producthunt.com/" target="__blank"><img src="./images/Events_Area51/Sponsors/product-hunt.png"></a>
+					</div>
+					<div class="sponsor-icon square-icon">
+						<a href="https://www.jetbrains.com/" target="__blank"><img src="./images/Events_Area51/Sponsors/JetBrains-Logo.svg"></a>
+					</div>
+					<div class="sponsor-icon">
+						<a href="https://www.sketchapp.com/" target="__blank"><img src="./images/Events_Area51/Sponsors/sketch-logo-light-transparent@2x.png"></a>
+					</div>
+					<div class="sponsor-icon square-icon">
+						<a href="https://www.creative-tim.com/" target="__blank"><img src="./images/Events_Area51/Sponsors/Creative-tim.png"></a>
+					</div>
+					<div class="sponsor-icon">
+						<a href="https://www.bugsee.com/" target="__blank"><img src="./images/Events_Area51/Sponsors/bugsee.png"></a>
+					</div>
+				</div>
+				<div class="frame5-text">
+					Interested in making 'Hack on Hills' a huge success.<br>
+					Come join us by sponsoring us. Check the &nbsp;<a href="./pdf/sponsorship-brochure.pdf" target="__blank">Sponsorship Brochure</a>&nbsp; for more details.
+				</div>
+			</div>
+		</div>
+		<div class="frame frame6">
+			<img src="./images/Events_Area51/back-6.svg" class="img-back-left">
+			<img src="./images/Events_Area51/back-7.svg" class="img-back-right">
+			<div class="name"> Prizes </div>
+			<div class="prizes">
+				<div class="prizes-cont">
+					<div class="prize">
+						<div class="prize-img">
+							<img src="./images/Events_Area51/new_logo.png">
+						</div>
+						<div class="prize-text">
+							First Prize : ₹ 15000 Cash
+						</div>
+					</div>
+					<div class="prize">
+						<div class="prize-img">
+							<img src="./images/Events_Area51/new_logo.png">
+						</div>
+						<div class="prize-text">
+							Second Prize : ₹ 10000 Cash
+						</div>
+					</div>
+					<div class="prize">
+						<div class="prize-img">
+							<img src="./images/Events_Area51/new_logo.png">
+						</div>
+						<div class="prize-text">
+							Third Prize : ₹ 5000 Cash
+						</div>
+					</div>
+					<div class="prize">
+						<div class="prize-img">
+							<img src="./images/Events_Area51/new_logo.png">
+						</div>
+						<div class="prize-text">
+							Most Innovative : ₹ 5000 Cash
+						</div>
+					</div>
+					<div class="prize">
+						<div class="prize-img">
+							<img src="./images/Events_Area51/new_logo.png">
+						</div>
+						<div class="prize-text">
+							Diversity Prize : ₹ 5000 Cash
+						</div>
+					</div>
+					<div class="prize">
+						<div class="prize-img">
+							<img src="./images/Events_Area51/new_logo.png">
+						</div>
+						<div class="prize-text">
+							Best social media post tagging Hack on Hills - Special Schwags 
+						</div>
+					</div>
+					<div class="prize">
+						<div class="prize-img">
+							<img class="img-square" src="./images/Events_Area51/Sponsors/zulip-logo.png">
+						</div>
+						<div class="prize-text">
+							Best App using Zulip API - 100$
+						</div>
+					</div>
+					<div class="prize">
+						<div class="prize-img">
+							<img src="./images/Events_Area51/Sponsors/hasura_logo_horizontal_black.png">
+						</div>
+						<div class="prize-text">
+							Best App using GraphQL - ₹ 5000 Flipkart Voucher
+						</div>
+					</div>
+					<div class="prize">
+						<div class="prize-img">
+							<img src="./images/Events_Area51/Sponsors/Matic_Logo.png">
+						</div>
+						<div class="prize-text">
+							Best Ethereum App - ₹ 5000 Cash
+						</div>
+					</div>
+					<div class="prize">
+						<div class="prize-img">
+							<img src="./images/Events_Area51/images/images/">
+						</div>
+						<div class="prize-text">
+							Participants developing Ethereum applications - Devfolio T-shirt 
+						</div>
+					</div>
+					<div class="prize">
+						<div class="prize-img">
+							<img src="./images/Events_Area51/Sponsors/devfolio.png">
+						</div>
+						<div class="prize-text">
+							Top 3 teams - T-Shirts/Bags and Coupons
+						</div>
+					</div>
+					<div class="prize">
+						<div class="prize-img">
+							<img src="./images/Events_Area51/Sponsors/roposo.png">
+						</div>
+						<div class="prize-text">
+							Top 10 teams - Placement Opportunities
+						</div>
+					</div>
+					<div class="prize">
+						<div class="prize-img">
+							<img src="./images/Events_Area51/Sponsors/socialcops.png">
+						</div>
+						<div class="prize-text">
+							Top 5 teams - Placement Opportunities
+						</div>
+					</div>
+					<div class="prize">
+						<div class="prize-img">
+							<img src="./images/Events_Area51/Sponsors/bugsee.png">
+						</div>
+						<div class="prize-text">
+							Top 3 teams - $1000 Bugsee Credit
+						</div>
+					</div>
+					<div class="prize">
+						<div class="prize-img">
+							<img src="./images/Events_Area51/Sponsors/sketch-logo-light-transparent@2x.png">
+						</div>
+						<div class="prize-text">
+							Top 3 teams -Sketch License
+						</div>
+					</div>
+					<div class="prize">
+						<div class="prize-img">
+							<img src="./images/Events_Area51/Sponsors/sketch-logo-light-transparent@2x.png">
+						</div>
+						<div class="prize-text">
+							3 Licenses to be raffled among Participants
+						</div>
+					</div>
+					<div class="prize">
+						<div class="prize-img">
+							<img class="img-square" src="./images/Events_Area51/Sponsors/Creative-tim.png">
+						</div>
+						<div class="prize-text">
+							Top 3 Teams - Access to their premium products
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="frame frame7">
+			<img src="./images/Events_Area51/back-4.svg" class="img-back">
+			<img src="./images/Events_Area51/back-5.svg" class="img-back-bottom">
+			<div class="frame7-content">
+				<div class="name">
+					FAQs
+				</div>
+				<div class="faq">
+					<div class="question">
+						Is this hackathon an online event or offline?
+					</div>
+					<div class="answer">
+						Hack on hills is offline event and as a participant you need to be present at NIT Hamirpur campus one or two day before the event at least.
+					</div>
 
-    <!-- Logo on tab -->
-    <link rel="icon" href="assets/unicorndev logo.jpg" />
-
-    <!-- font awesome for icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
-
-    <!-- animate.css -->
-    <link
-      rel="stylesheet"
-      href="../../cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
-    />
-
-    <!--css files-->
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/mobile-style.css" />
-    <link rel="stylesheet" href="css/particles.css" />
-    <link rel="stylesheet" href="css/navbar.css" />
-
-    <!--google fonts-->
-    <link
-      href="../../fonts.googleapis.com/css2670.css?family=Lato|Montserrat|Open+Sans|Poppins|Roboto|Source+Sans+Pro&amp;display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- Header -->
-    <header id="hero-section" class="section hero-section">
-      <div id="particles-js" class="particles">
-        <nav class="navbar">
-          <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
-            <i class="fa fa-bars"></i>
-          </label>
-          <a href="#" class="hack-logo">UnicornDev</a>
-          <input type="checkbox" id="chkToggle" />
-          <ul class="main-nav" id="js-menu">
-            <li>
-              <a href="index.html" class="nav-links">Home</a>
-            </li>
-            <li>
-              <a href="#about-section" class="nav-links">About</a>
-            </li>
-            <li>
-              <a href="#schedule-section" class="nav-links">Schedule</a>
-            </li>
-            <li>
-              <a href="#sponsors-section" class="nav-links">Sponsors</a>
-            </li>
-            <li>
-              <a href="#faq-section" class="nav-links">FAQs</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="hackrcdu">
-          <h1 class="animated flipInX">AREA' 51</h1>
-          <h3>May the code be with you!</h3>
-          <h5>
-            Organised by UnicornDev Community in association <br />
-            with  IEDC JEC and CSI JEC
-          </h5>
-          <button class="devfolio-apply-now">
-            <a href="https://bit.ly/37M3qmo">Register Now</a>
-          </button>
-          <div class="icons">
-            <a href="https://www.linkedin.com/in/unicorn-dev-0157a9225/"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-            <a href="https://github.com/Unicorn-Dev-Community"
-              ><i class="fab fa-github"></i
-            ></a>
-            <a href="#"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="https://www.twitter.com/unicorndevs"
-              ><i class="fab fa-twitter"></i
-            ></a>
-          </div>
-        </div>
-        <div class="illustration animated slideInRight">
-          <img
-            class="hero-img"
-            src="assets/a1.png"
-            alt=""
-          />
-        </div>
-      </div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about-section" class="section about-section">
-      <div class="highlights">
-        <h1 class="animated flip delay-2s">Hackathon Highlights_</h1>
-        <h1>Stage 1 Submission Deadline</h1>
-        <div class="container">
-          <ul class="countdown">
-            <li><span id="days"></span>days</li>
-            <li><span id="hours"></span>Hours</li>
-            <li><span id="minutes"></span>Minutes</li>
-            <li><span id="seconds"></span>Seconds</li>
-          </ul>
-        </div>
-      <div class="prize">
-        <div class="prize-card">
-          Prizes Worth <br />
-          Rs.18k
-        </div>
-        <div class="prize-card">
-          Certificates to all <br />
-        </div>
-      </div>
-      <div class="cards">
-        <div class="card card-clock">
-          <i class="far fa-clock animated bounceIn delay-2s"></i>
-          <h3>48hrs</h3>
-        </div>
-        <div class="card card-themes">
-          <i class="fas fa-laptop-code animated bounceIn delay-2s"></i>
-          <h3>7 Themes</h3>
-        </div>
-        <div class="card card-teams">
-          <i class="fas fa-users animated bounceIn delay-2s"></i>
-          <h3>10 Finalists</h3>
-        </div>
-        <div class="card card-food">
-          <i class="fas fa-hotdog animated bounceIn delay-2s"></i>
-          <h3>Food & Swags</h3>
-        </div>
-      </div>
-    </section>
-
-    <section id="themes-section" class="section themes-section">
-      <h1 class="animated flip delay-2s">Themes_</h1>
-      <div class="theme-cards">
-        <div class="theme-card card-clock">
-          <i class="fa-solid fa-school animated bounceIn delay-2s"></i>
-          <h3>Ed-Tech</h3>
-        </div>
-        <div class="theme-card card-themes">
-          <i class="fa-solid fa-coins animated bounceIn delay-2s"></i>
-          <h3>Fin-Tech</h3>
-        </div>
-        <div class="theme-card card-teams">
-          <i class="fa-solid fa-briefcase-medical animated bounceIn delay-2s"></i>
-          <h3>Healthcare</h3>
-        </div>
-        <div class="theme-card card-clock">
-          <i class="fa-solid fa-tractor animated bounceIn delay-2s"></i>
-          <h3>Agriculture</h3>
-        </div>
-        <div class="theme-card card-themes">
-          <i class="fa-brands fa-hive animated bounceIn delay-2s"></i>
-          <h3>Blockchain</h3>
-        </div>
-        <div class="theme-card card-themes">
-          <i class="fa-solid fa-lock animated bounceIn delay-2s"></i>
-          <h3>Cybersecurity</h3>
-        </div>
-        <div class="theme-card card-teams">
-          <i class="fa-brands fa-think-peaks animated bounceIn delay-2s"></i>
-          <h3>Open Innovation</h3>
-        </div>
-      </div>
-    </section>
-
-    <!-- Schedule Section -->
-    <section id="schedule-section" class="section schedule-section">
-      <div class="event-schedule">
-        <h1 class="animated flip delay-2s">Event Schedule_</h1>
-      </div>
-      <div class="schedule-section-section">
-        <div class="section-1">
-          <h2 style="text-align: center">DAY 1</h2>
-          <table class="table-fill">
-            <thead>
-              <tr>
-                <td>Hour</td>
-                <td>Description</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>9:30AM</td>
-                <td>
-                  Inauguration Ceremony
-                </td>
-              </tr>
-              <tr>
-                <td>10:30AM</td>
-                <td>
-                  Technical Talk
-                </td>
-              </tr>
-              <tr>
-                <td>11AM</td>
-                <td>
-                  Hack Begins.
-                </td>
-              </tr>
-              <tr>
-                <td>2PM</td>
-                <td>Lunch Eat. Code. Repeat 😋</td>
-              </tr>
-              <tr>
-                <td>3PM</td>
-                <td>Hack Continues</td>
-              </tr>
-              <tr>
-                <td>5PM</td>
-                <td>Refreshment Time 🍔</td>
-              </tr>
-              <tr>
-                <td>7PM</td>
-                <td>Final Hack Ends</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="partition"></div>
-        <div class="section-2">
-          <h2 style="text-align: center">DAY 2</h2>
-          <table class="table-fill">
-            <thead>
-              <tr>
-                <td>Hour</td>
-                <td>Description</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>9AM</td>
-                <td>Judges Introduction</td>
-              </tr>
-              <tr>
-                <td>10AM</td>
-                <td>Pitching Begins </td>
-              </tr>
-              <tr>
-                <td>11:30AM</td>
-                <td>Pitching Ends</td>
-              </tr>
-              <tr>
-                <td>2PM</td>
-                <td>Result and Prize Distribution.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
- 
-            <!--
-            <div class="div9 event-card">event 9</div>
-            <div class="div10 event-card">event 10</div>
-            <div class="div11 event-card">event 11</div>
-            <div class="div12 event-card">event 12</div>
-          --></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="sponsors-section" class="section sponsors-section">
-      <div class="sponsors-section-section">
-        <div class="sponsors">
-          <h1 class="animated flip delay-2s">Our Sponsors_</h1>
-          <div class="sponsors-list">
-            <h1>Coming Soon</h1>
-            <!--<div class="sponsors-list-list">
-              <h5>Alpha Sponsor</h5>
-              <a href="https://devfolio.co/">
-                <img src="assets/dev.png" width="200px" class="" alt="" />
-              </a>
-            </div>
-
-            <div class="sponsors-list-list">
-              <h5>Beta Sponsor</h5>
-              <a href="https://matic.network/">
-                <img src="assets/matic2.png" width="220px" class="" alt="" />
-              </a>
-              <div class="padd"></div>
-              <a href="https://fold.money/">
-                <img src="assets/fold.svg" width="120px" class="" alt="" />
-              </a>
-            </div>
-
-            <div class="sponsors-list-list">
-              <h5>Coding Partner</h5>
-              <div class="sponsors-list-img">
-                <img src="assets/CNLOGO.svg" width="180px" class="" alt="" />
-                <img src="assets/index.png" width="280px" class="" alt="" />
-                <img
-                  src="assets/0ba295b66f676a965ba15303344f9e553b9e5f54381820d3752eee997e0c5d97cec5dbd68de0edd07b62c69b5d6b11ed15dd4655fef05607afd6a9deab3e1cc1.png"
-                  width="200px"
-                  class=""
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>-->
-        </div>
-      </div>
-    </section>
-
-    <section id="faq-section" class="section faq-section">
-      <div class="faq-section-section">
-        <div class="faqs">
-          <h1 class="animated flip delay-2s">FAQs_</h1>
-        </div>
-        <div class="faqs-list">
-          <div class="accordion">
-            <div class="accordion-item">
-              <a>How big can my team be?</a>
-              <div class="content">
-                <p>The maximum team size allowed is 5.</p>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <a>Can I come individually?</a>
-              <div class="content">
-                <p>No. A team of minimum 2 members is allowed.</p>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <a>When?</a>
-              <div class="content">
-                <p>
-                  AREA' 51 2k22 will be a 3 stage hackathon with 1st 2 stages in online mode and the 
-                  final stage will be conducted in offline manner on Apr 29th and 30th.
-                  1st stage  from Apr 16 10:00am - Apr 23 12:00am.2nd stage from Apr 23rd 2:00pm - Apr 27th 12:00am.
-                </p>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <a>Where?</a>
-              <div class="content">
-                <p>
-                  AREA' 51 finals will be conducted at Jyothi Engineering College,Cheruthuruthy,Kerala.
-                </p>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <a>Will there be food arrangement?</a>
-              <div class="content">
-                <p>
-                  Oh-Yeah-Absolutely. You will be provided with proper meals on
-                  both days. Thanks to our sponsors.
-                </p>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <a>How much does it cost?</a>
-              <div class="content">
-                <p>Everything at AREA' 51 is free of cost.</p>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <a>What are the criteria of shortlisting the teams?</a>
-              <div class="content">
-                <p>
-                  The registered participants will be shortlisted based on their
-                  abstract for the 1st stage and for the 2nd stage based on their half prototype
-                </p>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <a>What do I bring with me to the event?</a>
-              <div class="content">
-                <p>
-                  You are required to bring your college ID, laptops,
-                  phone, chargers, extensions.
-                </p>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <a>What is the eligibility criteria?</a>
-              <div class="content">
-                <p>
-                  You must be a UG or PG student studying in any College in Kerala.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer id="footer" class="footer">
-      <div class="footer-contact">
-        <h4><u>For any query contact us:</u></h4>
-        <h4>
-          Sidharth S Unnithan - 9910449071 <br />
-          Sidharth P - 7025111127 <br />
-          Email: kirantsuresh25@gmail.com
-        </h4>
-      </div>
-      <h4>
-        Built with <i class="fa-solid fa-heart"> </i> by Team UnicronDev
-      </h4>
-    </footer>
-
-    <!-- Particles.js -->
-    <script src="../../cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
-    <!-- JavaScript Files -->
-    <script src="js/scripts.js"></script>
-    <!--<script src="js/particles.js"></script>-->
-
-  </body>
+				</div>
+				<div class="faq">
+					<div class="question">
+						Do this hackathon has any participation fees for students?
+					</div>
+					<div class="answer">
+						No. The hackathon is free of cost for any student from any college all over India.
+					</div>
+				</div>
+				<div class="faq">
+					<div class="question">
+						What are all the restrictions on Team formations for the event?
+					</div>
+					<div class="answer">
+						A team can have at most 4 members and minimum of 2 members.
+					</div>
+				</div>
+				<div class="faq">
+					<div class="question">
+						What should I do if I do not have any team yet?
+					</div>
+					<div class="answer">
+						Just fill out the application form and according to skills you have filled out, we will match you with the best team possible during Pre-Hackathon meeting.
+					</div>
+				</div>
+				<div class="faq">
+					<div class="question">
+						What are the Perks and Benefits of Participating in this Hackathon?
+					</div>
+					<div class="answer">
+						Hackathon Provide hands on experience with the experts from different field working on the Projects like Blockchain, AI, Machine Learning, etc. This will help to give a head start if any one want to make project on the field. Along with that the participant will be provided with cool swags, stickers and refreshments to keep them up.
+					</div>
+				</div>
+				<div class="faq">
+					<div class="question">
+						What are the Accommodation Facility for the Participant from Outside the College?
+					</div>
+					<div class="answer">
+						Participant will be provided with Accommodation and Food in the Guest House of the College during the Hackathon Period.
+					</div>
+				</div>
+				<div class="faq">
+					<div class="question">
+						How to reach NIT Hamirpur for the event?
+					</div>
+					<div class="answer">
+						The nearest airport is Dharamshala (Gaggal, district Kangra). You can easily find flights from Delhi airport to Gaggal airport. From Gaggal bus stand, you have to take bus or private taxi to Hamirpur. Otherwise, direct buses to Hamirpur is also available from Delhi ISBT, from Chandigarh and from other places.
+					</div>
+				</div>
+				<div class="faq">
+					<div class="question">
+						I have a question related to hackathon which is not listed above. What should I do?
+					</div>
+					<div class="answer">
+						Feel free to reach us out. Just drop us a mail at <a href="mailto:hackonhills@gmail.com">hackonhills@gmail.com</a><br>
+						You can also contact one of our organizers: Nitin (+91-8619295061), Aditya (+91-7976223877), Jatin (+91-7018352269)
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="frame frame8">
+			<div class="footer-icons">
+				<a href="https://github.com/appteam-nith/HackOnHills" target="__blank"><img src="./images/Events_Area51/github-color.svg"></a>
+				<a href="https://www.facebook.com/hackonhills/" target="__blank"><img src="./images/Events_Area51/fb-color.svg"></a>
+				<a href="https://www.instagram.com/hackonhills/" target="__blank"><img src="./images/Events_Area51/insta-color.svg"></a>
+				<a href="https://twitter.com/hackonhills" target="__blank"><img src="./images/Events_Area51/twitter-color.svg"></a>
+				<a href="https://www.linkedin.com/company/hack-on-hills/" target="__blank"><img src="./images/Events_Area51/linkedin-color.svg"></a>
+				<a href="mailto:hackonhills@gmail.com"><img src="./images/Events_Area51/email-color.svg"></a>
+			</div>
+			<div class="footer-text">
+				<a href="https://hackcodeofconduct.org/847-hack_on_hills" target="__blank"> Code of Conduct </a>
+			</div>
+			<div class="footer-text">
+				&copy; 2019 Team Hack on Hills
+			</div>
+			Made with &nbsp;&nbsp;<span class="heart">❤️</span>
+		</div>
+	</div>
+	<script type="text/javascript" src="./js/events_area51.js"></script>
+</body>
 </html>
