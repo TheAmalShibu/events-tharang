@@ -10,4 +10,4 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 
 var marker = L.marker(center).addTo(mymap);
 
-marker.bindPopup("<b>KJSCE</b> CodeCell, <br>K.J. Somaiya College Of Engineering,<br/>Vidyavihar, Mumbai.").openPopup();
+marker.bindPopup("<b>UnicornDev</b> JEC, <br>Jyothi Engineering College,<br/>Cheruthuruthy, Thrissur,Kerala.").openPopup();
