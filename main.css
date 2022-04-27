@@ -101,3 +101,10 @@
     grid-template-rows: auto auto;
   }
 
+  .nav-link-text-2fix {
+    display: inline-block;
+    margin-left: 0px;
+    padding: 4px 0px;
+    font-size: 30px;
+    font-weight: 400;
+  }
